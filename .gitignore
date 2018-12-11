@@ -1,0 +1,12 @@
+/spring-cloud-zuul/*.iml
+/spring-cloud-zuul/.idea
+/spring-cloud-zuul/spring-cloud-consumer/spring-cloud-consumer.iml
+/spring-cloud-zuul/spring-cloud-consumer/target
+/spring-cloud-zuul/spring-cloud-eureka/spring-cloud-eureka.iml
+/spring-cloud-zuul/spring-cloud-eureka/target
+/spring-cloud-zuul/spring-cloud-producer/spring-cloud-producer.iml
+/spring-cloud-zuul/spring-cloud-producer/target
+/spring-cloud-zuul/spring-cloud-producer-2/spring-cloud-producer-2.iml
+/spring-cloud-zuul/spring-cloud-producer-2/target
+/spring-cloud-zuul/spring-cloud-zuul/spring-cloud-zuul.iml
+/spring-cloud-zuul/spring-cloud-zuul/target
