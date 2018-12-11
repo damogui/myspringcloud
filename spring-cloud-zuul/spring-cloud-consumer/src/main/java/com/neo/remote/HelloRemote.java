@@ -1,5 +1,6 @@
 package com.neo.remote;
 
+import com.neo.controller.model.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,6 +15,8 @@ public interface HelloRemote {
 
     @RequestMapping(value = "/hello")
     public String hello(@RequestParam(value = "name") String name);
+    @RequestMapping(value = "/getUser")
+    public String getUser(@RequestBody User user);
 
 
 }

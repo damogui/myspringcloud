@@ -11,12 +11,20 @@
 	<name>spring-cloud-consumer</name>
 	<description>Demo project for Spring cloud consumer</description>
 
+	<!--<parent>-->
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-starter-parent</artifactId>-->
+		<!--<version>1.5.3.RELEASE</version>-->
+		<!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+	<!--</parent>-->
+
+	<!--beg-->
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.neo</groupId>
+		<artifactId>spring-cloud-parent</artifactId>
+		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
+	<!--end-->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

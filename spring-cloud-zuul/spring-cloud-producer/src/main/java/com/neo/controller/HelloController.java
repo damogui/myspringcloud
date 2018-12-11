@@ -1,8 +1,10 @@
 package com.neo.controller;
 
+import com.neo.controller.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,13 @@ public class HelloController {
     @RequestMapping("/hello")
     public String index(@RequestParam String name) {
         logger.info("request one  name is "+name);
-        return "hello "+name+"，this is first messge";
+        return "hello6666 "+name+"，this is first messge";
+    }
+
+    @RequestMapping("/getUser")
+    public User getUser(@RequestBody User user) {
+        logger.info(user.getName());
+        user.setAge(12);
+        return user;
     }
 }
