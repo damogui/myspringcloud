@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @Author: 郭佳
  * @ClassName: User
- * @Description:
+ * @Description:成功使用微服务
  * @Date: 2018-12-11 15:18
  */
 @Data
