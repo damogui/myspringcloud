@@ -4,17 +4,15 @@ import com.neo.controller.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(allowCredentials="true", allowedHeaders="*", methods={RequestMethod.GET,RequestMethod.POST}, origins="*")
 public class HelloController {
     private final Logger logger = LoggerFactory.getLogger(FallbackProvider.class);
 
     @RequestMapping("/hello")
-    public String index(@RequestParam String name) {
+    public String index(@RequestParam(value ="name" ,required = false) String name) {
         logger.info("request one  name is "+name);
         return "hello6666 "+name+"，this is first messge";
     }
